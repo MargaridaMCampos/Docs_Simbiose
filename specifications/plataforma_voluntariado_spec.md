@@ -36,7 +36,7 @@
 
 ---
 ---
-# introduction [*](#contents "Get back to `contents`")
+# introduction[*](#contents "Get back to `contents`")
 
 `Simbiose`'s primary goal is to *agilize voluntary work*.
 
@@ -64,7 +64,7 @@ The following chapters in this document detail the *software specificication* of
 
 ---
 ---
-# user requirements  [*](#contents "Get back to `contents`")
+# user requirements[*](#contents "Get back to `contents`")
 
 (See **user requirements**' diagram in [miro][pages-miro].)
 
@@ -279,7 +279,7 @@ Every user with access to `INITIATIVES` must have the following filtering option
 
 ---
 ---
-# references  [*](#contents "Get back to `contents`")
+# references[*](#contents "Get back to `contents`")
 
 
 [pages-miro]: https://miro.com/app/board/o9J_lbOC5uo=/ "Home of Simbiose's `miro` board."
