@@ -11,7 +11,7 @@
 
 ---
 ---
-# contents <a id='contents' title='contents'></a>
+# contents
 
 1. [**introduction**](#introduction)
 2. [**user requirements**](#user-requirements)
@@ -34,7 +34,6 @@
 8. **plan and calendar**
 9. [**references**](#references)
 
-[ai](#contents)
 ---
 ---
 # introduction [$\uparrow$](#contents)
@@ -61,7 +60,7 @@ Furthermore, following `Simbiose`'s philosophy, the platform should be absolutel
 
 ---
 
-The following chapters in this document detail the *software specificication* of the platform, starting by the *user requirements* - a formal description of what a user can expect to find in the platform.
+The following chapters in this document detail the *software specificication* of the platform, starting by the *user requirements* - a formal yet undetailed description of what a user can expect to find in the platform.
 
 ---
 ---
@@ -155,7 +154,7 @@ A validated `institution` has access to all spaces, and is able to:
 * at `IDEAS`:
     * see all ideas and search with full options functionality.
     * up-vote an idea,
-    * sponsor an idea;
+    * sponsor an idea, i.e., turn it in an `initiative`;
 * at `PROFILES`:
     * see every institution profiles
     * see every volunteer profiles
@@ -193,7 +192,8 @@ An `iniciative card` is the atomic constituent of `INITIATIVES` space and has th
         * *sporadic*,
         * *regular*;
 * (optional) `location` at which it takes place, if applicable;
-* (required) `description`, which *should* follow certain guidelines - suggested when an `institution` is creating an initiative;
+* (required) `short description` of the initiative 
+* (required) `full description`, which *should* follow certain guidelines - suggested when an `institution` is creating an initiative;
 * (required) `image`, which might be:
     * uploaded by the `institution`,
     * chosen by the `institution` from a given bank of images,
@@ -202,21 +202,51 @@ An `iniciative card` is the atomic constituent of `INITIATIVES` space and has th
     * *open*
     * *closed*
 
+
+An `initiative card` can then appear with different levels of information (depending on the `visualization mode` of `INITIATIVES`):
+* *full information*: in which all attributes are displayed;
+* *card information*: in which the attributes displayed are:
+    * `name`
+    * `institution`
+    * `short description`
+    * `date`
+    * `location`
+    * `status`
+* *timeline information*: in which 
+    * ``
+* *map information*: in which the attributes displayed are:
+    * `name`
+    * `location`
+    * `status`
+
+ [ TODO - discutir tudo isto ]
+
 ---
 #### visualization modes
 
-The `initiative card`s must be possible to visualize in the following modes:
+The `initiative cards` must be possible to visualize in the following modes:
 * `grid`, the default mode, in which:
-    * all `card`s are arranged in a grid-like manner [ TODO - discutir infinite scroll vs pages ]
-    * each `card` appears represented with *minimal information*
-* `time-line`
-* `map`
-* `single initiative`
+    * all `cards` are arranged in a grid-like manner [ TODO - discutir infinite scroll vs pages ]
+    * each `card` appears represented with *reduced information*
+* `time-line`, in which:
+    * one is to select a time range, 
+    * `cards` appear in a sequential order wrt time
+    * `cards` that overlap in time appear in paralel
+    * each `card` appears represented with *timeline information*
+* `map`, in which:
+    * one has access to a map,
+    * each `card` appears as a small icon at their `location`
+* `single initiative`, the view for full information on the `card`
+
+[ TODO - discutir também isto ]
 
 ---
 #### filtering options
 
+Every user with access to `INITIATIVES` should have the following filtering options:
 * in every visualization mode:
+    * by `name`
+    * by `institution`
     * by `category`:
         * hierarchical
     * by `status`
@@ -246,11 +276,9 @@ The `initiative card`s must be possible to visualize in the following modes:
 ---
 # references [$\uparrow$](#contents "Get back to contents.")
 
-[bla]: /#contents
 
 [pages-miro]: https://miro.com/app/board/o9J_lbOC5uo=/ "Home of Simbiose's `miro` board."
 
 * `Miro` [home page][pages-miro]
-* [tal][bla]
 
 
