@@ -288,27 +288,49 @@ Every user with access to `INITIATIVES` must have the following filtering option
 ---
 #### creating an initiative
 
-When the `INITIATIVES` space is in `grid` visualization mode [ TODO - ver se faz sentido em qq outro modo ], there must be an option to create a new `initiative` available only to the `institution` user.
+When the `INITIATIVES` space is in `grid` visualization mode [ TODO - ver se faz sentido em qq outro modo ], there is an option to create a new `initiative` - available only to the `institution` user.
 
 When creating an `initiative`, the `institution` is presented with a form of all `initiative` attributes to fill.
 
-In the `description` attribute section, the `institution` can choose whether to have an opinionated structure given to it (i.e., `Simbiose`'s current version of the most appealing format and content keywords to use). [ PENSAR - isto para evitar que haja iniciativas que toda a gente quer e outras que ninguém quer, só pela forma como são apresentadas ]
+In the `full description` attribute section, there is an option to choose whether to follow an *opinionated* structure (i.e., `Simbiose`'s current version of the most appealing format and content keywords to use). 
 
+[ PENSAR - isto para evitar que haja iniciativas que toda a gente quer e outras que ninguém quer, só pela forma como são apresentadas ]
+
+In the `image` attribute section, there is an option to either upload an image, choose from a bank of images, or use the `institution` `logo`.
+
+When the `initiative` is created, an `initiative room` is created with it, managed by the `institution`.
 
 
 ---
 #### joining an initiative
 
-When the `INITIATIVES` space is in `single` visualization mode [ TODO - ver se faz sentido em qq outro modo ], there must be an option to create a new `initiative` available only to the `institution` user.
+When the `INITIATIVES` space is in `single` visualization mode [ TODO - ver se faz sentido em qq outro modo ] on an *open* `initiative`, there is an option to join it - available only to the `volunteer` user.
+
+When a `volunteer` joins an `initiative` in the platform, the `institution` is notified to either accept or reject it.
+
+If the `institution` accepts the `volunteer`, the `volunteer` is automatically added to the respective `initiative` `room`.
+
+
+#### `initiative` `room`
+
+???
+
+
 
 ---
 ### IDEAS
 
+???
+
 ---
 ### PROFILES
 
+???
+
 ---
 ### DASHBOARD
+
+???
 
 
 ---
