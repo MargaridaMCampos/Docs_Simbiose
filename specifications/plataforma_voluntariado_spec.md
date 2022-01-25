@@ -40,21 +40,21 @@
 
 `Simbiose`'s primary goal is to *agilize voluntary work*.
 
-There is currently no good and easy way for a wanna-be `volunteer` to find an institution in need - 
-and there are plenty of wanna-be voluntaries, and plenty of institutions in need. `Simbiose` sees this as a gigantic flaw in the system, dragging only for our *still* immature usage of digital tools. [ TODO - ser muito menos dramático ]
+There is currently no good and easy way for a wanna-be volunteer to find an institution in need - 
+and there are plenty of wanna-be volunteers, and plenty of institutions in need. 
 
 
-`Simbiose` wants to solve this problem by creating a new *platform* of communication between `volunteers` and `institutions`. In creating this platform, we indeed hope to create a new *market* of cooperation: one that connects two entities absolutely complementary to each other and with a natural incentive to cooperate.
+`Simbiose` wants to solve this problem by creating a new *platform* of communication between volunteers and institutions. In creating this platform, we hope to create a new *market* of cooperation: one that connects two entities absolutely complementary to each other and with a natural incentive to cooperate.
 
 *(For accomplishing such graaand dreaaams!)* such a **platform** should:
-* empower a wanna-be `volunteer` with:
+* empower a wanna-be **volunteer** with:
     * the most frictionless way for finding 
     a project to work on,
     * a bird's eye-view on the variety of projects out there,
-    * a validation of the `institution`s promoting the projects;
-* and empower an `institution` with personel or material needs with:
+    * a validation of the institutions promoting the projects;
+* and empower an **institution** with personel or material needs with:
     * a window for showcasing their projects and needs - with standardized support for marketing best practices,
-    * a reference system for considering the `volunteer`s interested.
+    * a reference system for considering the volunteers interested.
 
 Furthermore, following `Simbiose`'s philosophy, the platform should be absolutely transparent regarding its usage and traffic.
 
@@ -70,7 +70,7 @@ The following chapters in this document detail the *software specificication* of
 
 ## high view of the platform
 
-From a high-view prespective, the platform is comprised of:
+From a high-level prespective, the platform is comprised of:
 * 3 types of `users`:
     1. `external` user,
     1. `volunteer`,
@@ -250,9 +250,14 @@ The `initiative cards` must be possible to visualize in the following modes:
 
 Every user with access to `INITIATIVES` must have the following filtering options:
 * in every visualization mode:
-    * by `name`
-    * by `institution`
-    * by `category`:
+    * by `name`, with:
+        * keywords;
+    * by `institution`, with:
+        * keywords
+        * institution name
+        * institution presentation page info
+        * institution categories
+    * by `category`, with:
         * hierarchical
     * by `status`
 * if not in `map` mode:
