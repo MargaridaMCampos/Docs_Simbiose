@@ -36,11 +36,11 @@
 
 ---
 ---
-# introduction [$\uparrow$](#contents)
+# introduction [*](#contents "Get back to `contents`")
 
 `Simbiose`'s primary goal is to *agilize voluntary work*.
 
-There is currently no good and easy way for a wanna-be voluntary to find an institution in need - 
+There is currently no good and easy way for a wanna-be `volunteer` to find an institution in need - 
 and there are plenty of wanna-be voluntaries, and plenty of institutions in need. `Simbiose` sees this as a gigantic flaw in the system, dragging only for our *still* immature usage of digital tools. [ TODO - ser muito menos dramático ]
 
 
@@ -64,7 +64,7 @@ The following chapters in this document detail the *software specificication* of
 
 ---
 ---
-# user requirements [$\uparrow$](#contents "Get back to contents.")
+# user requirements  [*](#contents "Get back to `contents`")
 
 (See **user requirements**' diagram in [miro][pages-miro].)
 
@@ -105,12 +105,12 @@ An `external` user has access only to `HOME` and `DASHBOARD`, and is able to:
 
 #### validation
 
-Each volunteer *should* be validated directly, by requiring:
+Each `volunteer` *should* be validated directly, by requiring:
 * *full name*,
 * *age*,
 * *id number*: cc/passport
 
-In accepting to subscribe, the volunteer must get notified that any `institution` for which it works is entitled to ask to see the respective identification document.
+In accepting to subscribe, the `volunteer` must get notified that any `institution` for which it works is entitled to ask to see the respective identification document.
 
 #### permittable actions
 
@@ -118,16 +118,16 @@ A subscribed `volunteer` has access to all spaces, and is able to:
 * at `HOME`:
     * see the same as any user;
 * at `INITIATIVES`:
-    * see all initiatives and search with full options functionality 
-    * join an initiative,
+    * see all `initiatives` and search with full options functionality 
+    * join an `initiative`,
 * at `IDEAS`:
-    * see all ideas and search with full options functionality
-    * create/propose an idea
-    * up-vote an idea
-    * comment on an idea [ TODO - ver se faz sentido ]
+    * see all `ideas` and search with full options functionality
+    * create/propose an `idea`
+    * up-vote an `idea`
+    * comment on an `idea` [ TODO - ver se faz sentido ]
 * at `PROFILES`:
-    * see every institution profiles
-    * see its own profile
+    * see every `institution` profiles
+    * see its own `volunteer` profile
 * at `DASHBOARD`:
     * see the same as any user
 
@@ -149,15 +149,15 @@ A validated `institution` has access to all spaces, and is able to:
 * at `HOME`:
     * see the same as any user;
 * at `INITIATIVES`:
-    * see all initiatives and search with full options functionality,
-    * create an initiative;
+    * see all `initiatives` and search with full options functionality,
+    * create an `initiative`;
 * at `IDEAS`:
-    * see all ideas and search with full options functionality.
-    * up-vote an idea,
-    * sponsor an idea, i.e., turn it in an `initiative`;
+    * see all `ideas` and search with full options functionality.
+    * up-vote an `idea`,
+    * sponsor an `idea`, i.e., turn it in an `initiative`;
 * at `PROFILES`:
-    * see every institution profiles
-    * see every volunteer profiles
+    * see every `institution` profiles
+    * see every `volunteer` profiles
     * update its own profile
 * at `DASHBOARD`:
     * see the same as any user
@@ -168,7 +168,12 @@ A validated `institution` has access to all spaces, and is able to:
 ---
 ### HOME
 
-* login/sign up
+The `HOME` space must [AT LEAST, and PERHAPS NOT EVEN] have the following components:
+
+* information on `Simbiose` and the platform
+* information on each `space`
+* an option for login/sign up
+* an option to join `Simbiose` team?
 
 ---
 ### INITIATIVES
@@ -205,7 +210,7 @@ An `iniciative card` is the atomic constituent of `INITIATIVES` space and has th
 
 An `initiative card` can then appear with different levels of information (depending on the `visualization mode` of `INITIATIVES`):
 * *full information*: in which all attributes are displayed;
-* *card information*: in which the attributes displayed are:
+* *reduced information*: in which the attributes displayed are:
     * `name`
     * `institution`
     * `short description`
@@ -235,7 +240,7 @@ The `initiative cards` must be possible to visualize in the following modes:
     * each `card` appears represented with *timeline information*
 * `map`, in which:
     * one has access to a map,
-    * each `card` appears as a small icon at their `location`
+    * each `card` appears as a small icon at their `location` with *map information*
 * `single initiative`, the view for full information on the `card`
 
 [ TODO - discutir também isto ]
@@ -243,7 +248,7 @@ The `initiative cards` must be possible to visualize in the following modes:
 ---
 #### filtering options
 
-Every user with access to `INITIATIVES` should have the following filtering options:
+Every user with access to `INITIATIVES` must have the following filtering options:
 * in every visualization mode:
     * by `name`
     * by `institution`
@@ -274,7 +279,7 @@ Every user with access to `INITIATIVES` should have the following filtering opti
 
 ---
 ---
-# references [$\uparrow$](#contents "Get back to contents.")
+# references  [*](#contents "Get back to `contents`")
 
 
 [pages-miro]: https://miro.com/app/board/o9J_lbOC5uo=/ "Home of Simbiose's `miro` board."
