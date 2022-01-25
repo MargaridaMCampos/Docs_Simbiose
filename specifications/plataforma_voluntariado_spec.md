@@ -107,29 +107,29 @@ An `external` user has access only to `HOME` and `DASHBOARD`, and is able to:
 
 Each `volunteer` *should* be validated directly, by requiring:
 * *full name*,
-* *age*,
+* *date of birth*,
 * *id number*: cc/passport
 
 In accepting to subscribe, the `volunteer` must get notified that any `institution` for which it works is entitled to ask to see the respective identification document.
 
 #### permittable actions
 
-A subscribed `volunteer` has access to all spaces, and is able to:
+A subscribed `volunteer` has access to all `spaces`, and is able to:
 * at `HOME`:
     * see the same as any user;
 * at `INITIATIVES`:
-    * see all `initiatives` and search with full options functionality 
-    * join an `initiative`,
+    * see all `initiatives` and search with full options functionality,
+    * join an `initiative`;
 * at `IDEAS`:
-    * see all `ideas` and search with full options functionality
-    * create/propose an `idea`
-    * up-vote an `idea`
-    * comment on an `idea` [ TODO - ver se faz sentido ]
+    * see all `ideas` and search with full options functionality,
+    * create/propose an `idea`,
+    * up-vote an `idea`,
+    * comment on an `idea` [ TODO - ver se faz sentido ];
 * at `PROFILES`:
-    * see every `institution` profiles
-    * see its own `volunteer` profile
+    * see every `institution` profiles,
+    * see its own `volunteer` profile;
 * at `DASHBOARD`:
-    * see the same as any user
+    * see the same as any user.
 
 
 ---
@@ -139,13 +139,25 @@ A subscribed `volunteer` has access to all spaces, and is able to:
 
 The validation of an `institution` will need revisiting and thorough addressing.
 
+Currently, there are two options:
+1. an `institution` gets validated directly by `Simbiose`'s team - through *direct contact*;
+2. an `institution` fills up a form with legal information that is verifiable through some state agency - in order to get validated *automatically*
 
 
+#### characteristics
+
+Regardless of how an `institution` is validated, it must be assigned some attributes:
+* `name`,
+* `logo`,
+* `description` of the main activities
+* `categories` of areas of activities
+
+[ TODO - discutir quais outros/ se estes ]
 
 #### permittable actions
 
 
-A validated `institution` has access to all spaces, and is able to:
+A validated `institution` has access to all `spaces`, and is able to:
 * at `HOME`:
     * see the same as any user;
 * at `INITIATIVES`:
@@ -173,25 +185,25 @@ The `HOME` space must [AT LEAST, and PERHAPS NOT EVEN] have the following compon
 * information on `Simbiose` and the platform
 * information on each `space`
 * an option for login/sign up
-* an option to join `Simbiose` team?
+* an option to join `Simbiose` team [ PENSAR - ou só no site? ]
 
 ---
 ### INITIATIVES
 
-The `INITIATIVES` space holds the collection of all iniciatives - each represented as an `iniciative card` - with options for different visualization modes and filtering. It is the space where an `institution` can create a new `iniciative` and a `volunteer` may join any of them.
+The `INITIATIVES` space holds access to each `initiative`, with options for different visualization modes and filtering. It is also the `space` where an `institution` can create a new `iniciative` and a `volunteer` may join any of them.
 
-#### iniciative card
+#### single `iniciative`
 
-An `iniciative card` is the atomic constituent of `INITIATIVES` space and has the following attributes:
+An `iniciative` must have the following attributes:
 * (required) `name` of the initiative, which must be unique with respect to the `institution`'s past initiatives;
 * (required) `institution` creating the initiative;
 * (required) `mode`, which can fall into:
     * *personel*, further subdivided into:
         * *presential*,
-        * *remote*;
+        * *remote*,
     * *material*;
 * (required) `categories`, the collection of categories, where each must be hierarchical (e.g., social/cooking, social/education/mathematics)
-* (required) `date`, which can have the formats:
+* (required) `date`, which depends on the following formats:
     * *finite*, for when it has a specific set of dates,
     * *continuous*, for when it is an on-going project - further subdivided into:
         * *sporadic*,
@@ -208,40 +220,47 @@ An `iniciative card` is the atomic constituent of `INITIATIVES` space and has th
     * *closed*
 
 
-An `initiative card` can then appear with different levels of information (depending on the `visualization mode` of `INITIATIVES`):
+An `initiative` can then appear with different levels of information (depending on the `visualization mode` of `INITIATIVES`):
 * *full information*: in which all attributes are displayed;
-* *reduced information*: in which the attributes displayed are:
+* *card information*: in which the attributes displayed are:
     * `name`
     * `institution`
     * `short description`
     * `date`
     * `location`
     * `status`
-* *timeline information*: in which 
-    * ``
+* *time-line information*: in which the attributes displayed are:
+    * `name`?
 * *map information*: in which the attributes displayed are:
-    * `name`
+    * `name`?
     * `location`
-    * `status`
+    * `status`?
 
  [ TODO - discutir tudo isto ]
 
 ---
 #### visualization modes
 
-The `initiative cards` must be possible to visualize in the following modes:
+The `initiatives` must be possible to visualize in the following modes:
 * `grid`, the default mode, in which:
-    * all `cards` are arranged in a grid-like manner [ TODO - discutir infinite scroll vs pages ]
-    * each `card` appears represented with *reduced information*
+    * all `initiatives` are arranged in a grid-like fashion [ TODO - discutir infinite scroll vs pages ]
+    * each `initiative` appears represented with *card information*
 * `time-line`, in which:
     * one is to select a time range, 
-    * `cards` appear in a sequential order wrt time
-    * `cards` that overlap in time appear in paralel
-    * each `card` appears represented with *timeline information*
+    * `initiatives` appear in a sequential order wrt time
+    * `initiatives` that overlap in time appear in paralel
+    * each `initiatives` appears represented with *time-line information*
+    * [option] then, on hovering an `initiative`, *card information* is displayed
 * `map`, in which:
     * one has access to a map,
-    * each `card` appears as a small icon at their `location` with *map information*
-* `single initiative`, the view for full information on the `card`
+    * each `initiative` appears as a small icon at their `location` with *map information*
+    * [option] then, on hovering an `initiative`, *card information* is displayed
+
+Whenever an `initiative` is visualized with *card information*, there is an option to see the *full information*.
+
+The `INITIATIVES` space opens by default in `grid` mode. Then, in each visualization mode, there is a clear way to change to any of the other modes.
+
+
 
 [ TODO - discutir também isto ]
 
@@ -249,28 +268,38 @@ The `initiative cards` must be possible to visualize in the following modes:
 #### filtering options
 
 Every user with access to `INITIATIVES` must have the following filtering options:
-* in every visualization mode:
-    * by `name`, with:
-        * keywords;
-    * by `institution`, with:
-        * keywords
-        * institution name
-        * institution presentation page info
-        * institution categories
-    * by `category`, with:
-        * hierarchical
+* in every **visualization mode**:
+    * by *keywords*, searching through:
+        * `initiative`:
+            * name,
+            * short description
+            * full description
+        * `institution`:
+            * name
+            * description
+            * presentation page info
+    * by `categories`, of `initiative` and `institution`
+    * by `mode`
     * by `status`
-* if not in `map` mode:
-    * by `location`
-* if not in `time-line` mode:
-    * by `date`
+    * by `date` range
+* if **not in `map` mode**:
+    * by `location` area
 
 ---
 #### creating an initiative
 
+When the `INITIATIVES` space is in `grid` visualization mode [ TODO - ver se faz sentido em qq outro modo ], there must be an option to create a new `initiative` available only to the `institution` user.
+
+When creating an `initiative`, the `institution` is presented with a form of all `initiative` attributes to fill.
+
+In the `description` attribute section, the `institution` can choose whether to have an opinionated structure given to it (i.e., `Simbiose`'s current version of the most appealing format and content keywords to use). [ PENSAR - isto para evitar que haja iniciativas que toda a gente quer e outras que ninguém quer, só pela forma como são apresentadas ]
+
+
+
 ---
 #### joining an initiative
-    
+
+When the `INITIATIVES` space is in `single` visualization mode [ TODO - ver se faz sentido em qq outro modo ], there must be an option to create a new `initiative` available only to the `institution` user.
 
 ---
 ### IDEAS
